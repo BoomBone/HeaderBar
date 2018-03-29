@@ -19,7 +19,7 @@ class HeaderBar @JvmOverloads constructor(
 
     init {
         //与资源文件关联
-        val typeArray = context.obtainStyledAttributes(R.styleable.HeaderBar)
+        val typeArray = context.obtainStyledAttributes(attrs,R.styleable.HeaderBar)
 
         isShowBack = typeArray.getBoolean(R.styleable.HeaderBar_isShowBack, true)
         titleText = typeArray.getString(R.styleable.HeaderBar_titleText)
